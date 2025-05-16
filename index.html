@@ -150,7 +150,7 @@
             <button onclick="search()">Поиск</button>
             <div id="results"></div>
             <div id="footer">
-                Сделано специально для <a href="https://t.me/shura_soft_v2" style="color: #9d4edd; text-decoration: none; font-weight: bold;">https://t.me/shura_soft_v2</a>
+                ВЕС БАЗ ДАННЫХ 60 МБ
             </div>
         </div>
     </div>
@@ -275,7 +275,7 @@
             }
         });
 
-        const correctPassword = "bazukasoftmogd"; // Пароль изменен
+        const correctPassword = "doxcloud"; // Пароль изменен
 
         function login() {
             const password = document.getElementById('password').value;
@@ -300,10 +300,15 @@
             try {
                 const csvData = await fetchData('mogd.org/user.csv');
                 const txtData = await fetchData('ia600103.us.archive.org/26/items/getcontact.com-numbuster.com-2022/getcontact.com%20numbuster.com%20%282022%29.txt');
+                const txtData = await fetchData('ia601804.us.archive.org/4/items/get-contact-2020/%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C%20GetContact%202020.txt');
+                const txtData = await fetchData('ia601804.us.archive.org/4/items/get-contact-2020/%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C%20GetContact%202020.txt');
 
+
+                
                 const csvResults = searchInFile(csvData, searchText);
                 const txtResults = searchInFile(txtData, searchText);
-
+                const txtResults = searchInFile(txtData, searchText);
+                const txtResults = searchInFile(txtData, searchText);
                 let resultsHTML = '';
 
                 if (csvResults.length > 0) {
